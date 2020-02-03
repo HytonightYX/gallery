@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scroll To See Magic</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h2 class="title">Hi There, I'm YunXi</h2>
+	<section></section>
+	<div class="container">
+		<h2>Hytonight云息</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, aperiam at autem consequuntur cupiditate dicta distinctio dolorem explicabo fuga incidunt minus mollitia non officia pariatur praesentium repudiandae rerum! Consequatur, cumque!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, aperiam at autem consequuntur cupiditate dicta distinctio dolorem explicabo fuga incidunt minus mollitia non officia pariatur praesentium repudiandae rerum! Consequatur, cumque!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, aperiam at autem consequuntur cupiditate dicta distinctio dolorem explicabo fuga incidunt minus mollitia non officia pariatur praesentium repudiandae rerum! Consequatur, cumque!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, aperiam at autem consequuntur cupiditate dicta distinctio dolorem explicabo fuga incidunt minus mollitia non officia pariatur praesentium repudiandae rerum! Consequatur, cumque!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, aperiam at autem consequuntur cupiditate dicta distinctio dolorem explicabo fuga incidunt minus mollitia non officia pariatur praesentium repudiandae rerum! Consequatur, cumque!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, aperiam at autem consequuntur cupiditate dicta distinctio dolorem explicabo fuga incidunt minus mollitia non officia pariatur praesentium repudiandae rerum! Consequatur, cumque!
+		</p>
+	</div>
+	<script type="application/javascript">
+		var section = document.querySelector('section')
+		window.addEventListener('scroll', function () {
+			var value = window.scrollY + 100
+			section.style.clipPath = `circle(${value}px at center)`
+		})
+	</script>
+</body>
+</html>
