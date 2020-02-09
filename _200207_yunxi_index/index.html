@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>云息</title>
+	<script src="https://cdn.bootcss.com/jquery/1.12.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="bg"></section>
+	<h2 class="title">云息的主页</h2>
+	<div class="container">
+		<div class="wrap">
+			<a class="btn-3" href="http://yunxi.site/blog"><span>博客 Blog</span></a>
+			<a class="btn-0" href="http://yunxi.site/gallery">画廊 Gallery</a>
+			<a class="btn-11" href="http://yunxi.site/project">作品集 Project</a>
+		</div>
+	</div>
+
+	<script type="application/javascript">
+		var section = document.querySelector('section')
+		window.addEventListener('scroll', function () {
+			var value = window.scrollY + 100
+			section.style.clipPath = `circle(${value}px at center)`
+		})
+	</script>
+	<script>
+		$(function() {
+			$('.btn-6')
+				.on('mouseenter', function(e) {
+					var parentOffset = $(this).offset(),
+						relX = e.pageX - parentOffset.left,
+						relY = e.pageY - parentOffset.top;
+					$(this).find('span').css({top:relY, left:relX})
+				})
+				.on('mouseout', function(e) {
+					var parentOffset = $(this).offset(),
+						relX = e.pageX - parentOffset.left,
+						relY = e.pageY - parentOffset.top;
+					$(this).find('span').css({top:relY, left:relX})
+				});
+			$('[href=#]').click(function(){return false});
+		});
+	</script>
+</body>
+</html>

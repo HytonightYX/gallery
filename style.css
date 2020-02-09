@@ -50,7 +50,10 @@
 
 .content .art {
 	display: flex;
+	flex: 1;
+	align-items: center;
 	flex-direction: column;
+	margin: 10px 20px;
 }
 
 .art-img-wrap {
