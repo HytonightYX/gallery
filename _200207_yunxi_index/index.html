@@ -23,6 +23,7 @@
 		window.addEventListener('scroll', function () {
 			var value = window.scrollY + 100
 			section.style.clipPath = `circle(${value}px at center)`
+			section.style.webkitClipPath = `circle(${value}px at center)`
 		})
 	</script>
 	<script>

@@ -13,6 +13,7 @@ section {
 	height: 100vh;
 	background: url("bg.jpg") fixed;
 	clip-path: circle(100px at center);
+	-webkit-clip-path: circle(100px at center);
 }
 
 .container {

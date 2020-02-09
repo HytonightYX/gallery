@@ -16,6 +16,7 @@ section {
 	background: url("bg.jpg") fixed center;
 	-webkit-transition: 0.1s ease-in-out;
 	clip-path: circle(100px at center);
+	-webkit-clip-path: circle(100px at center);
 	z-index: -9999;
 }
 
