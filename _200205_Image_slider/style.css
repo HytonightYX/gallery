@@ -53,26 +53,26 @@ section .slide:hover .content {
 }
 
 section .slide:nth-child(1) {
-	background: url(img1.jpg) center center;
+	background: url("https://picsum.photos/1024/768?random=1") center center;
 	background-size: cover;
 }
 
 section .slide:nth-child(2) {
-	background: url(img2.jpg) center center;
+	background: url("https://picsum.photos/1024/768?random=3") center center;
 	background-size: cover;
 }
 
 section .slide:nth-child(3) {
-	background: url(img3.jpg) center center;
+	background: url("https://picsum.photos/1024/768?random=5") center center;
 	background-size: cover;
 }
 
 section .slide:nth-child(4) {
-	background: url(img4.jpg) center center;
+	background: url("https://picsum.photos/1024/768?random=7") center center;
 	background-size: cover;
 }
 
 section .slide:nth-child(5) {
-	background: url(img5.jpg) center center;
+	background: url("https://picsum.photos/1024/768?random=9") center center;
 	background-size: cover;
 }
