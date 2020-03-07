@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analog Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="clock">
+      <div class="hour">
+        <div class="hr" id="hr"></div>
+      </div>
+
+      <div class="min">
+        <div class="mn" id="mn"></div>
+      </div>
+
+      <div class="sec">
+        <div class="sc" id="sc"></div>
+      </div>
+    </div>
+
+    <script>
+      const hr = document.getElementById('hr')
+      const mn = document.getElementById('mn')
+      const sc = document.getElementById('sc')
+
+      function changeTime() {
+        let day = new Date()
+        // 时针一格30度，分、秒针一格6度
+        let hh = day.getHours() * 30
+        let mm = day.getMinutes() * 6
+        let ss = day.getSeconds() * 6
+
+        hr.style.transform = `rotateZ(${hh + mm / 12}deg)`
+        mn.style.transform = `rotateZ(${mm}deg)`
+        sc.style.transform = `rotateZ(${ss}deg)`
+      }
+
+      // 页面启动时候立即执行一次，否则会00:00:00持续一秒
+      changeTime()
+      // 设置定时器，一秒一次
+      setInterval(changeTime, 1000)
+    </script>
+  </body>
+</html>
